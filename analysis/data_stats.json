@@ -1,0 +1,27 @@
+{
+    "vaccine": {
+        "doc#tok": 17.276,
+        "toks": 169844,
+        "vocab": 10326
+    },
+    "amazon": {
+        "doc#tok": 170.403,
+        "toks": 122551021,
+        "vocab": 1507230
+    },
+    "yelp_rest": {
+        "doc#tok": 110.85,
+        "toks": 148458981,
+        "vocab": 1183484
+    },
+    "yelp_hotel": {
+        "doc#tok": 121.456,
+        "toks": 20777678,
+        "vocab": 283617
+    },
+    "dianping": {
+        "doc#tok": 66.728,
+        "toks": 198804146,
+        "vocab": 890359
+    }
+}

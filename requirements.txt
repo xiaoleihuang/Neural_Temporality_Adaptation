@@ -1,0 +1,14 @@
+numpy
+ipython
+scipy
+tensorflow >=1.12
+keras
+pandas
+matplotlib
+seaborn
+scikit-learn
+gensim
+nltk
+imbalanced-learn
+jieba
+cvxopt
