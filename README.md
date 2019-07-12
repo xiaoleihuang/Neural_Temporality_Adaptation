@@ -12,6 +12,18 @@ The meanings of words shift overtime~ This will bring tremendous effects on docu
 
 Overall, it is clear that classifiers generally perform best when applied to the same time interval they were trained. Performance diminishes when applied to different time intervals, although different corpora exhibit differ patterns in the way in which the performance diminishes. The image is from our previous publication, [Examining Temporality in Document Classification](https://aclweb.org/anthology/papers/P/P18/P18-2110/).
 
+## A Frustratingly Easy Method of Diachronic Word Embedding
+We propose a diachronic word embedding using fastText. See the [readme.md](https://github.com/xiaoleihuang/Neural_Temporality_Adaptation/blob/master/embeddings/readme.md) for how to train.
+
+### Advantages
+1. Train it once, run everywhere. The embedding model just like normal word embedding model, we don't need to train additional equations after training your embeddings. All you need to do is to only train your embeddings once. No extra time needed.
+2. No Transformation Matrix and Transformation Errors. Since the trained model learn words across time jointly, it does not require to learn transformation matrices between time intervals.
+3. No extra space needed. Our method only requires the space for the embedding models.
+4. Support online learning and incremental training. Unlike other methods, our proposed method can incrementally learn new coming corpora.
+5. Extensible word vocabulary. Unlike the transformation or pivot method, our proposed method do not need to choose a fix number of vocabulary as the transformation matrix. Our method supports extensible words even from the new coming data.
+
+
+
 ## Language Odyssey, What & Why the shifts happen?
 ![Image of Semantic Shifts](https://github.com/xiaoleihuang/Neural_Temporality_Adaptation/blob/master/git_images/shifts.png)
 
