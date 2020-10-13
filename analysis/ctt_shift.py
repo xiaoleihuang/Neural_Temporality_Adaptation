@@ -133,11 +133,11 @@ def ctt_shift(dname, topn=1000, window=5, mode='year'):
 def overlap(ctts, topn):
     '''Calculate contextual words overlaps between each time domain'''
     overlaps = dict()
-    for key in ctts:
+    for key in sorted(ctts.keys()):
         if key not in overlaps:
             overlaps[key] = dict()
 
-        for key1 in ctts:
+        for key1 in sorted(ctts.keys()):
             if key1 == key:
                 overlaps[key][key1] = 1.0
             else:
@@ -194,7 +194,7 @@ if __name__ == '__main__':
         ['yelp_rest', ['2006-08', '2009-11', '2012-14', '2015-17'], 'Yelp-rest'],
         ['yelp_hotel', ['2006-08', '2009-11', '2012-14', '2015-17'], 'Yelp-hotel'],
         ['dianping', ['2009', '2010', '2011', '2012'], 'Dianping'],
-        ['economy', ['1950-70', '1971-85', '1986-2000', '2001-14'], 'Economy'],
+        ['economy', ['1985-89', '1990-94', '1995-99', '2000-04', '2005-09', '2010-14'], 'Economy'],
     ]
 
     topn = 1000
