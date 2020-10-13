@@ -57,6 +57,14 @@ Python 3.6+, Ubuntu 16.04
 
 ## Our approach
 
+## Intrinsic Evaluation for DWE (unpublished manuscript)
+We conducted an intrinsic evaluation by a clustering task of word analogy.
+The evaluation will be available in my final Ph.D. thesis, while the manuscript was not published in the paper.
+You can refer to the experimental steps in [this unpublished manuscript](https://github.com/xiaoleihuang/Neural_Temporality_Adaptation/blob/master/git_images/dwe_eval.pdf).
+
+![Image of Semantic Shifts](https://github.com/xiaoleihuang/Neural_Temporality_Adaptation/blob/master/git_images/dwe_eval.png)
+
+
 ## Contacts
 Because the experimental datasets are too large to share all of them. Please send any requests or questions to my email: [xiaolei.huang@colorado.edu](xiaolei.huang@colorado.edu).
 
