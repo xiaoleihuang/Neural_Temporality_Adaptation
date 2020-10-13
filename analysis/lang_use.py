@@ -67,11 +67,11 @@ def lang_use(dname, topn=1000, mode='year'):
 def overlap(results, topn):
     '''Calculate overlaps between each time domain'''
     overlaps = dict()
-    for key in results:
+    for key in sorted(results.keys()):
         if key not in overlaps:
             overlaps[key] = dict()
 
-        for key1 in results:
+        for key1 in sorted(results.keys()):
             if key1 == key:
                 overlaps[key][key1] = 1.0
             else:
