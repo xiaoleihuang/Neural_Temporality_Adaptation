@@ -49,6 +49,7 @@ Python 3.6+, Ubuntu 16.04
 ## Data Analysis
   1. Please refer to the `analysis` folder.
   2. There are three main analysis perspectives: word usage, word context and semantic distance.
+  3. To understand topic shifts and how the temporal factor impacts document classifers, please refer to [our previous publication](https://www.aclweb.org/anthology/P18-2110.pdf) and its [git repository](https://github.com/xiaoleihuang/Domain_Adaptation_ACL2018).
 
 ## Baselines
   1. Please refer to the readme.md in the `baselines` folder.
