@@ -35,9 +35,13 @@ Generally, closer time intervals share higher overlap and have smaller semantic 
 
 
 ## Frequent vs. Polysemous Words
-Our method is also useful for interpreting semantic shifts. The visualization below can help select features for the time-varying corpora: polysemous features (unigram) have shown more semantic variations than the most frequent features (unigram).
+Our method is also useful for interpreting semantic shifts. The visualization below can help select features for the time-varying corpora: polysemous features (unigram) have shown more semantic variations than the most frequent features (unigram). Note that there are no overlaps between the most frequent and the polysemous feature sets.
 
 ![Image of Semantic Shifts](https://github.com/xiaoleihuang/Neural_Temporality_Adaptation/blob/master/git_images/semantic_distance.png)
+
+The polysemous words were selected by the mutual information (feature selection process). 
+Those words are recognized as the most important features and used for classifying documents. 
+However variations of the features will impact stabilities of document classifiers over time.
 
 
 ## Test Platform
