@@ -23,7 +23,6 @@ We propose a diachronic word embedding using fastText. See the [readme.md](https
 5. Extensible word vocabulary. Unlike the transformation or pivot method, our proposed method do not need to choose a fix number of vocabulary as the transformation matrix. Our method supports extensible words even from the new coming data.
 
 
-
 ## Language Odyssey, What & Why the shifts happen?
 ![Image of Semantic Shifts](https://github.com/xiaoleihuang/Neural_Temporality_Adaptation/blob/master/git_images/shifts.png)
 
@@ -33,6 +32,13 @@ We explore and analyze the shifts from three perspectives:
 3. Semantic distance: after obtaining diachronic word embeddings, we treat each time period as a domain and then use [Wasserstein distance](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.wasserstein_distance.html) to measure time shifts.
 
 Generally, closer time intervals share higher overlap and have smaller semantic distance shifts, and vice versa.
+
+
+## Frequent vs. Polysemous Words
+Our method is also useful for interpreting semantic shifts. The visualization below can help select features for the time-varying corpora: polysemous features (unigram) have shown more semantic variations than the most frequent features (unigram).
+
+![Image of Semantic Shifts](https://github.com/xiaoleihuang/Neural_Temporality_Adaptation/blob/master/git_images/semantic_distance.png)
+
 
 ## Test Platform
 Python 3.6+, Ubuntu 16.04
