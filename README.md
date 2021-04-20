@@ -1,5 +1,5 @@
 # Neural Temporality Adaptation and Diachronic (Dynamic) Word Embeddings
-Source codes for our paper "[Neural Temporality Adaptation for Document Classification: Diachronic Word Embeddings and Domain Adaptation Models](https://cmci.colorado.edu/~mpaul/files/acl2019_temporality.pdf)" at ACL 2019.
+Source codes for our paper "[Neural Temporality Adaptation for Document Classification: Diachronic Word Embeddings and Domain Adaptation Models](https://www.aclweb.org/anthology/P19-1403/)" at ACL 2019.
 
 ## Word Semantic Meanings Shift Overtime
 ![Image of Semantic Shifts](https://nlp.stanford.edu/projects/histwords/images/wordpaths.png)
